@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+{% block title %} Signin page{% endblock %}
+{% block content %}
+
+<h2>Signin</h2>
+{% if current_user.is_authenticated %}
+        You are already logged in.
+{% else %} {{ msg }}<br>
+
+<form action="#" method='post' id="signin-form">
+    <label>Email Address</label>
+    <input type="email" name="email" required/><br><br>
+    <label>password</label>
+    <input type="password" name="password" required/><br><br>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+    <span>Don't have an account?</span>
+    <a href="/signup">Sign up</a>
+
+</form>
+{% endif %}
+{% endblock %}

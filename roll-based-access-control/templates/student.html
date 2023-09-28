@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Students page {% endblock %}
+
+{% block content %}
+
+<h3>Students</h3>
+<ol>
+{% for student in students %}
+<li>
+{{student.email}}
+</li>
+{% endfor %}
+</ol>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>Hello {{name}}! Your email is: {{email}}</h1>
+        <h2>Even Numbers</h2>
+        <ul>
+            {% for num in numbers %}
+                {% if num%2 == 0%}
+                    <li>{{num}}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        
+    </body>
+</html>

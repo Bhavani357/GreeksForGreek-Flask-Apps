@@ -1,0 +1,14 @@
+<html>
+    <body>
+        Hello {{name}}! Your email is: {{email}}
+        <br>
+        Even numbers:
+        {% for i in numbers %}
+            {% if i%2==0 %}
+                {{i}}
+            {% endif %}
+        {% endfor %}
+        
+        
+    </body>
+</html>

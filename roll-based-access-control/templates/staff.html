@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+{% block title %} Staff Page{% endblock %}
+{% block content %}
+
+<h3>Staff</h3>
+<ol>
+{% for staf in staff %}
+<li>
+{{staf.email}}
+</li>
+{% endfor %}
+</ol>
+
+{% endblock %}
